@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "ChatWork ToAll",
+  "version": "1.0",
+  "description": "Add ChatWork to ToAll button.",
+  "icons": {
+    "16":  "icons/icon_16.png",
+    "48":  "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.chatwork.com/*"],
+      "js":      ["js/jquery-2.1.0.min.js", "js/script.js"],
+      "css":     ["css/style.css"]
+    }
+  ]
+}
